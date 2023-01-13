@@ -1,5 +1,5 @@
 import type { Multiaddr } from 'https://esm.sh/@multiformats/multiaddr@11.1.5'
-import { BlockCodec, MultibaseCodec, MultihashHasher } from './_vendor/multiaddr.ts'
+import { BlockCodec, MultibaseCodec, MultihashHasher } from './_vendor/multiformats/types.ts'
 
 export interface IPLDOptions {
   loadBase: LoadBaseFn

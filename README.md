@@ -4,7 +4,4 @@ Old (forked from ipfs-http-lite) version has been deleted in favor of a rewrite.
 
 🪐🦕 IPFS client for Deno
 
-todo:
-
-- [ ] port ipfs-http-client with replaced imports of broken deps
-- [ ] add ws support
+An [ipfs-http-client](https://github.com/ipfs/js-ipfs/blob/master/packages/ipfs-http-client) port for Deno with fixed deps and reuse of imports from source code.

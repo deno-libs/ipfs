@@ -1,5 +1,10 @@
-export type { MultibaseCodec } from 'https://esm.sh/multiformats@11.0.0/src/bases/interface.ts'
-export type { MultihashHasher } from 'https://esm.sh/multiformats@11.0.0/src/hashes/interface.ts'
+import type {
+  MultibaseCodec,
+  Multibase,
+  MultibaseEncoder,
+  MultibaseDecoder
+} from 'https://esm.sh/multiformats@11.0.0/src/bases/interface.ts'
+import type { MultihashHasher, MultihashDigest } from 'https://esm.sh/multiformats@11.0.0/src/hashes/interface.ts'
 /**
  * A byte-encoded representation of some type of `Data`.
  *
@@ -53,3 +58,6 @@ export interface BlockDecoder<Code extends number, T> {
  * An IPLD codec is a combination of both encoder and decoder.
  */
 export interface BlockCodec<Code extends number, T> extends BlockEncoder<Code, T>, BlockDecoder<Code, T> {}
+
+export type { MultihashHasher, MultihashDigest, MultibaseEncoder, MultibaseDecoder }
+export type { MultibaseCodec, Multibase }
