@@ -1,5 +1,7 @@
-# ipfs
+# ipfs (W.I.P.)
 
-Deno republish of the [ipfs-http-client](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-http-client) IPFS client.
+Deno port of the [ipfs-http-client](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-http-client) IPFS client.
 
-Please send an email to v1rtl@proton.me to invite you as collaborator if you'd like to build a Deno-native client for IPFS.
+It re-uses as much of original code as possible, while minimizing amount of dependencies and using TypeScript instead of JSDoc for better types.
+
+esm.sh version of ipfs-http-client has 390 dependencies, our plan is to cut it down to about 100-200 and improve types in some places.
